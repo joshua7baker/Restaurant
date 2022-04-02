@@ -11,6 +11,10 @@ namespace Fast_Food
             //List of products
 
             //Assign product values
+
+            var Menu = new Menu(); //Create menu
+            Menu.CreateProducts(); //Generate Product List
+
             var productList = new List<Product> {}; // Product List
             // Add products to product list
             

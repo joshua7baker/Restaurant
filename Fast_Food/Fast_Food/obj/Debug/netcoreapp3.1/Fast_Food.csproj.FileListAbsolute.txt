@@ -12,3 +12,17 @@ C:\Users\joshu\source\repos\Fast_Food\Fast_Food\obj\Debug\netcoreapp3.1\Fast_Foo
 C:\Users\joshu\source\repos\Fast_Food\Fast_Food\obj\Debug\netcoreapp3.1\Fast_Food.dll
 C:\Users\joshu\source\repos\Fast_Food\Fast_Food\obj\Debug\netcoreapp3.1\Fast_Food.pdb
 C:\Users\joshu\source\repos\Fast_Food\Fast_Food\obj\Debug\netcoreapp3.1\Fast_Food.genruntimeconfig.cache
+C:\Users\joshu\Documents\GitHub\Resturant\Fast_Food\Fast_Food\bin\Debug\netcoreapp3.1\Fast_Food.exe
+C:\Users\joshu\Documents\GitHub\Resturant\Fast_Food\Fast_Food\bin\Debug\netcoreapp3.1\Fast_Food.deps.json
+C:\Users\joshu\Documents\GitHub\Resturant\Fast_Food\Fast_Food\bin\Debug\netcoreapp3.1\Fast_Food.runtimeconfig.json
+C:\Users\joshu\Documents\GitHub\Resturant\Fast_Food\Fast_Food\bin\Debug\netcoreapp3.1\Fast_Food.runtimeconfig.dev.json
+C:\Users\joshu\Documents\GitHub\Resturant\Fast_Food\Fast_Food\bin\Debug\netcoreapp3.1\Fast_Food.dll
+C:\Users\joshu\Documents\GitHub\Resturant\Fast_Food\Fast_Food\bin\Debug\netcoreapp3.1\Fast_Food.pdb
+C:\Users\joshu\Documents\GitHub\Resturant\Fast_Food\Fast_Food\obj\Debug\netcoreapp3.1\Fast_Food.csproj.AssemblyReference.cache
+C:\Users\joshu\Documents\GitHub\Resturant\Fast_Food\Fast_Food\obj\Debug\netcoreapp3.1\Fast_Food.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joshu\Documents\GitHub\Resturant\Fast_Food\Fast_Food\obj\Debug\netcoreapp3.1\Fast_Food.AssemblyInfoInputs.cache
+C:\Users\joshu\Documents\GitHub\Resturant\Fast_Food\Fast_Food\obj\Debug\netcoreapp3.1\Fast_Food.AssemblyInfo.cs
+C:\Users\joshu\Documents\GitHub\Resturant\Fast_Food\Fast_Food\obj\Debug\netcoreapp3.1\Fast_Food.csproj.CoreCompileInputs.cache
+C:\Users\joshu\Documents\GitHub\Resturant\Fast_Food\Fast_Food\obj\Debug\netcoreapp3.1\Fast_Food.dll
+C:\Users\joshu\Documents\GitHub\Resturant\Fast_Food\Fast_Food\obj\Debug\netcoreapp3.1\Fast_Food.pdb
+C:\Users\joshu\Documents\GitHub\Resturant\Fast_Food\Fast_Food\obj\Debug\netcoreapp3.1\Fast_Food.genruntimeconfig.cache

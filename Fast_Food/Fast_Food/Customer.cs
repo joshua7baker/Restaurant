@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Fast_Food
 {
-    class Customer
+    public class Customer
     {
         public string customerName { get; set; } //Customer name
         public int itemOrderAmount { get; set; } //Amount of items being ordered
