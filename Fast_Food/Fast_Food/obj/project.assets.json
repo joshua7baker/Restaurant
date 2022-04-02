@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joshu\\source\\repos\\Fast_Food\\Fast_Food\\Fast_Food.csproj",
+      "projectUniqueName": "C:\\Users\\joshu\\Documents\\GitHub\\Resturant\\Fast_Food\\Fast_Food\\Fast_Food.csproj",
       "projectName": "Fast_Food",
-      "projectPath": "C:\\Users\\joshu\\source\\repos\\Fast_Food\\Fast_Food\\Fast_Food.csproj",
+      "projectPath": "C:\\Users\\joshu\\Documents\\GitHub\\Resturant\\Fast_Food\\Fast_Food\\Fast_Food.csproj",
       "packagesPath": "C:\\Users\\joshu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joshu\\source\\repos\\Fast_Food\\Fast_Food\\obj\\",
+      "outputPath": "C:\\Users\\joshu\\Documents\\GitHub\\Resturant\\Fast_Food\\Fast_Food\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\joshu\\AppData\\Roaming\\NuGet\\NuGet.Config",

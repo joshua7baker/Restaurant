@@ -11,7 +11,9 @@ namespace Fast_Food
             //List of products
 
             //Assign product values
-            var productList = new List<Product> {}; // Add products to product list
+            var productList = new List<Product> {}; // Product List
+            // Add products to product list
+            
             //Number of customers
 
             //Create tills

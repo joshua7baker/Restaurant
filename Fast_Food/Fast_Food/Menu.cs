@@ -6,6 +6,10 @@ namespace Fast_Food
 {
     class Menu
     {
+        //bool for am or pm
+        //
         
+
+
     }
 }
