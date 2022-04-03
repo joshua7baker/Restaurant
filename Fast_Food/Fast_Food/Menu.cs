@@ -10,14 +10,19 @@ namespace Fast_Food
 
         List<string> listOfFood = new List<string> //Food List
         {
-            "Burger",
+            "Beef Burger",
+            "Chicken Burger",
         };
         List<string> listOfDrinks = new List<string> //Drinks List
         {
             "Cola", 
             "Fanta",
-
         };
+
+        public Menu() //Class constructor
+        {
+            CreateProductList();
+        }
 
         public void CreateProductList() //Add products from other lists to create master product list
         {

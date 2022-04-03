@@ -24,7 +24,9 @@ namespace Fast_Food
             string customerName; //Customer name that will be returned
             var randomName = new Random(); //Random var to get random ref from list 
             int index = randomName.Next(customerNames.Count); //Get random index number through random variable within customerNames list
+
             customerName = customerNames[index]; //Set customer name to string found in customerNames via index defined
+
             return customerName;
         }
     }
