@@ -15,7 +15,7 @@ namespace Fast_Food
         };
         List<string> listOfDrinks = new List<string> //Drinks List
         {
-            "Cola", 
+            "Cola",
             "Fanta",
         };
 
@@ -35,9 +35,30 @@ namespace Fast_Food
             }
         }
 
-        void FetchProductInfo(string name, decimal price)
+        //Fetch product info, currently hardcoded to return values on a per string value basis, should be updated to work more smoothly later on to find 
+        //product information not using if statements
+        public decimal FetchProductInfo(string productName)
         {
-
+            if (productName == "Beef Burger")
+            {
+                return 4.00M;
+            }
+            else if (productName == "Chicken Burger")
+            {
+                return 3.50M;
+            }
+            else if (productName == "Cola")
+            {
+                return 1.99M;
+            }
+            else if (productName == "Fanta")
+            {
+                return 1.99M;
+            }
+            else
+            {
+                throw new ArgumentNullException();
+            }
         }
 
 

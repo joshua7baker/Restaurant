@@ -51,10 +51,10 @@ namespace Fast_Food
 
             orderList.Sort(); //Sort order list alphabetically
 
-            foreach (var item in orderList) //Foreach printing out what they are ordering
-            {
-                Console.WriteLine($"{customerName} has arrived and they are ordering {item}");
-            }
+            //foreach (var item in orderList) //Foreach printing out what they are ordering
+            //{
+            //    Console.WriteLine($"{customerName} has arrived and they are ordering {item}");
+            //}
 
         }
     }

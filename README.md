@@ -15,3 +15,10 @@ The must haves of this project are:
 
 Additional goals (if there's time)
 - Add a timer for the customer order process to be updates e.g. customers take 1 second to order and pay then the next customer can order.
+- Setup the program to repeat the next day on user input etc 
+- Display some analytical data about customer habits and profits etc
+- Add secondary mode to simulate cashier duty (see below)
+- Add additional input that could be used by a cashier, confirm order is correct etc.
+- Select cash or card (update transactional statement)
+- Input cash received
+- Display change given 
