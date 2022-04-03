@@ -8,14 +8,22 @@ namespace Fast_Food
         static void Main(string[] args)
         {
             //Variables
-            //List of products
+            int numberOfCustomers = 5; // Number of customers to be generated
+
+            CustomerNames customerName = new CustomerNames();
 
             //Assign product values
-
             var Menu = new Menu(); //Create menu
-            Menu.CreateProducts(); //Generate Product List
+            Menu.CreateProductList(); //Generate Product List
 
-            var productList = new List<Product> {}; // Product List
+            //Create number of customer classes equivalent to N of customer var
+            for (int i = 0; i < numberOfCustomers; i++)
+            {
+                var Customer = new Customer();
+            }
+
+
+            //var productList = new List<Product> {}; // Product List
             // Add products to product list
             
             //Number of customers

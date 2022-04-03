@@ -4,27 +4,35 @@ using System.Text;
 
 namespace Fast_Food
 {
-    public class Menu
+    class Menu
     {
-        //Create product for as many products on the list
-        List<string> Products = new List<string> { "Burger", "Cola" }; //Product List to generate
+        public List<string> listOfProducts = new List<string>(); //Product List to generate
 
-        public void CreateProducts() //Create all instances of each product class
+        List<string> listOfFood = new List<string> //Food List
         {
-            foreach (var item in Products) //Generate a product class for each product string in "Products" List
-            {
-                if (item == "Burger")  //Burger
-                {
-                    var burger = new Product("Burger", 3.50M); 
-                    Console.WriteLine($"Product {burger.ProductName} generated, at price {burger.ProductPrice}.");
-                }
-                else if (item == "Cola") //Cola
-                {
-                    var cola = new Product("Cola", 1.70M);  
-                    Console.WriteLine($"Product {cola.ProductName} generated, at price {cola.ProductPrice}.");
-                }
+            "Burger",
+        };
+        List<string> listOfDrinks = new List<string> //Drinks List
+        {
+            "Cola", 
+            "Fanta",
 
+        };
+
+        public void CreateProductList() //Add products from other lists to create master product list
+        {
+            listOfProducts.AddRange(listOfDrinks); //Add Drinks menu to product list
+            listOfProducts.AddRange(listOfFood); //Add food menu to product list
+
+            foreach (var item in listOfProducts) //Print out the product list
+            {
+                //Console.WriteLine(item);
             }
+        }
+
+        void FetchProductInfo(string name, decimal price)
+        {
+
         }
 
 

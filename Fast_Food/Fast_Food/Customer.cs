@@ -9,10 +9,22 @@ namespace Fast_Food
         public string customerName { get; set; } //Customer name
         public int itemOrderAmount { get; set; } //Amount of items being ordered
 
-        public Customer(string name, int orderAmount) //Construct customer
+        public List<string> orderList = new List<string>();
+
+        public Customer() //Construct customer
         {
-            customerName = name;
-            itemOrderAmount = orderAmount;
+            //Customer Name
+            CustomerNames customerNames = new CustomerNames(); //Create reference to CustomerNames class
+            customerName = customerNames.AssignName(); //Assign customer name from list of customer names in the names class
+
+            //Customer Order Amount
+            var randomAmount = new Random(); //Random var to use for getting random number
+            int orderAmount = randomAmount.Next(1, 5); //Find random number within parameters currently hardcoded
+            itemOrderAmount = orderAmount; //Set amount of items customer will order
+
+            //Customer Order Contents
+
+
             Console.WriteLine($"{customerName} will be ordering {itemOrderAmount} products from the menu today.");
         }
 
