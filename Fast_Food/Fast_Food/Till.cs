@@ -11,10 +11,13 @@ namespace Fast_Food
         private decimal balance;
 
         Menu menu = new Menu(); //Reference to menu to get prices
-        public void ProcessOrder(string product)
+        public decimal ProcessOrder(string product)
         {
             decimal productPrice = menu.FetchProductInfo(product); //Fetch price from menu
-            Console.WriteLine($"Price for {product} is {productPrice}"); //Display product price
+            //Console.WriteLine($"Price for {product} is {productPrice}"); //Display product price
+
+            return productPrice;
+
         }
 
     }

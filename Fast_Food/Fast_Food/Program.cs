@@ -8,7 +8,7 @@ namespace Fast_Food
         static void Main(string[] args)
         {
             //Variables
-            int numberOfCustomers = 1; // Number of customers to be generated
+            int numberOfCustomers = 10; // Number of customers to be generated
 
             List<Customer> listOfCustomers = new List<Customer>(); //List of all customers
 
@@ -29,7 +29,7 @@ namespace Fast_Food
 
             //Process Orders
             processOrders();
-
+                
             //Function to process each customer order and payment
             void processOrders()
             {
@@ -37,21 +37,28 @@ namespace Fast_Food
 
                 foreach (var customer in listOfCustomers)
                 {
-                    Console.WriteLine($"{customer.customerName} is ordering ");
+                    //Console.WriteLine($"{customer.customerName} is ordering ");
 
-                    List<string> orderInfo = new List<string>(); //List to contain order information
+                    List<string> orderInfo = new List<string>(); //List to contain order information (filled inside foreach below)
+                    decimal orderTotalPrice = 0M; //Order total price to be used as total in transaction
 
-                    foreach (var item in customer.orderList)
+                    foreach (var item in customer.orderList) //Loop through each item in the customer order
                     {
-                        till.ProcessOrder(item); //Process one order item 
+                        decimal itemPrice = till.ProcessOrder(item); //Get item price
                         string itemDetails = $"{item}"; //Price is not a variable, and only currently fetched from Menu and called from Till???
-                        Console.WriteLine(itemDetails);
+                        string orderItemDetails = $"{item}  {itemPrice}"; // Interpolate product name and price 
 
-                        //Console.WriteLine(item); //Print what product is being ordered/processed
+                        orderTotalPrice += itemPrice; //Add item price to order total
+                        orderInfo.Add(orderItemDetails); //Add order details string to order info list
+
+                        //Console.WriteLine(orderItemDetails); //Print what product is being ordered/processed
                     }
 
-                    //Resume, I was working out how to display order information as a transactional statement as there is no price variable yet
-                    Transaction transaction = new Transaction(orderInfo);
+                    string displayTotalPrice = $"Total: {orderTotalPrice}"; //Order total price string
+                    DateTime orderTime = DateTime.Now;
+                    //Console.WriteLine(displayTotalPrice); // Display order total price
+
+                    Transaction transaction = new Transaction(orderInfo, orderTotalPrice, orderTime); //Create new transaction record containing order details of customer, items purchased + price
 
 
                 }
@@ -62,7 +69,6 @@ namespace Fast_Food
             //var productList = new List<Product> {}; // Product List
             // Add products to product list
             
-            //Number of customers
 
             //Create tills
 

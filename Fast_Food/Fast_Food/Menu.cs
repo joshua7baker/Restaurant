@@ -12,11 +12,13 @@ namespace Fast_Food
         {
             "Beef Burger",
             "Chicken Burger",
+            "Nuggets",
+            "Fries"
         };
         List<string> listOfDrinks = new List<string> //Drinks List
         {
             "Cola",
-            "Fanta",
+            "Fanta"
         };
 
         public Menu() //Class constructor
@@ -46,6 +48,14 @@ namespace Fast_Food
             else if (productName == "Chicken Burger")
             {
                 return 3.50M;
+            }
+            else if (productName == "Nuggets")
+            {
+                return 2.00M;
+            }
+            else if (productName == "Fries")
+            {
+                return 1.50M;
             }
             else if (productName == "Cola")
             {
