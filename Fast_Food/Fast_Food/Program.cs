@@ -8,14 +8,15 @@ namespace Fast_Food
         static void Main(string[] args)
         {
             //Variables
+            BankAccount bankAccount = new BankAccount(); //Create bank account
+
             int numberOfCustomers = 10; // Number of customers to be generated
 
             List<Customer> listOfCustomers = new List<Customer>(); //List of all customers
 
-
-            //Assign product values
             var Menu = new Menu(); //Create menu
-
+            Menu.CreateProductList();
+            
 
             //Setup Tills
             Till till = new Till();
@@ -23,14 +24,21 @@ namespace Fast_Food
             //Create number of customer classes equivalent to N of customer var
             for (int i = 0; i < numberOfCustomers; i++)
             {
-                var customer = new Customer(); //Create new customer
+                var customer = new Customer(Menu); //Create new customer
                 listOfCustomers.Add(customer); //Add new customer to list
             }
 
             //Process Orders
             processOrders();
+
+            //Perform post day processes
+            Console.WriteLine($"Todays Sales: £{bankAccount.Balance}"); //Print out daily total
                 
-            //Function to process each customer order and payment
+
+
+            //Function to process each customer order and payment || Currently this is in the main program, however in future should be moved
+            //to the Till class if further functionality is implemented. However if it isn't the till functions should be moved into this one 
+            // As otherwise Till is performing unneccessary extra steps
             void processOrders()
             {
                 //int customerBeingProcessed = 0;
@@ -55,30 +63,20 @@ namespace Fast_Food
                     }
 
                     string displayTotalPrice = $"Total: {orderTotalPrice}"; //Order total price string
-                    DateTime orderTime = DateTime.Now;
+                    DateTime orderTime = DateTime.Now; //Set order time = date/time of order
                     //Console.WriteLine(displayTotalPrice); // Display order total price
 
-                    Transaction transaction = new Transaction(orderInfo, orderTotalPrice, orderTime); //Create new transaction record containing order details of customer, items purchased + price
+                    Transaction transaction = new Transaction(orderInfo, orderTotalPrice, orderTime); //Create new transaction record containing order details
+                                                                                                      //of customer,   items purchased + price
+                    bankAccount.allTransactions.Add(transaction); //Add transaction into bank account
 
 
                 }
             }
 
 
-
-            //var productList = new List<Product> {}; // Product List
-            // Add products to product list
-            
-
-            //Create tills
-
-            //Create menu ()
-
             //Create products based off of menu () 
 
-            //Create defined amount of customers ()
-                //Customer name and product amount
-                //Function to assign items being bought
 
             //Foreach customer send them to a till
                 //Perform transaction at each till

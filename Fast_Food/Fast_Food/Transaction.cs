@@ -12,12 +12,14 @@ namespace Fast_Food
         public Transaction(List<string> productsPurchased, decimal totalPrice, DateTime orderTime)
         {
             Console.WriteLine(orderTime); // Print Transaction Time
-            Console.WriteLine(totalPrice); //Print transaction total
+            Console.WriteLine($"Total: {totalPrice}"); //Print transaction total
 
             foreach (var item in productsPurchased)
             {
                 Console.WriteLine(item); // Print order details
             }
+
+            Console.WriteLine(); //Blank line to seperate transaction statements
 
             transactionTotal = totalPrice; //Set transaction total
         }

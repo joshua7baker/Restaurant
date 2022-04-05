@@ -11,7 +11,7 @@ namespace Fast_Food
 
         public List<string> orderList = new List<string>();
 
-        public Customer() //Construct customer
+        public Customer(Menu menu) //Construct customer
         {
             //Customer Name
             CustomerNames customerNames = new CustomerNames(); //Create reference to CustomerNames class
@@ -23,16 +23,16 @@ namespace Fast_Food
             itemOrderAmount = orderAmount; //Set amount of items customer will order
 
             //Customer Order Contents
-            ItemsToOrder(itemOrderAmount);
+            ItemsToOrder(itemOrderAmount, menu);
 
             //Console.WriteLine($"{customerName} will be ordering {itemOrderAmount} products from the menu today.");
         }
 
 
         //Function to set items they are purchasing
-        void ItemsToOrder(int amount)
+        void ItemsToOrder(int amount, Menu menu)
         {
-            Menu menu = new Menu(); //Creat reference to menu class
+            //Menu menu = new Menu(); //Creat reference to menu class
             List<string> listOfProducts = menu.listOfProducts; //create duplicate list to use as ref for product list inside function
 
             int maxListRange = listOfProducts.Count; //max range to use for Random.Next function finding product
