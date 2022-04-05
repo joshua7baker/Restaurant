@@ -1,4 +1,4 @@
-# Resturant
+# Restaurant
 
 This project aims to create a simulation of a resturant order process, creating customers, assigning them order requirements, orders being made and payment made,
 and end of day profits.
